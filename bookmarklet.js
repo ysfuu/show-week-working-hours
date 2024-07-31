@@ -165,13 +165,13 @@
             const [rwth27, rwtm27] = calculateRemainingX(weekTotalWithToday, 18);
             const [rwth18, rwtm18] = calculateRemainingX(weekTotalWithToday, 27);
             addChild({label: `Bu Hafta Kalan`, value: `${rwth} saat, ${rwtm} dakika`, class: weekRemainingElem, style: 'margin-top:10px;'});
-            if (rwth36 !== 0 && rwtm36 !== 0) {
+            if (rwth36 !== 0 || rwtm36 !== 0) {
                 addChild({label: `36 saat için`, value: `${rwth36} saat, ${rwtm36} dakika`, style: 'font-size:13px;margin-top:-6px'});
             }
-            if (rwth27 !== 0 && rwtm27 !== 0) {
+            if (rwth27 !== 0 || rwtm27 !== 0) {
                 addChild({label: `27 saat için`, value: `${rwth27} saat, ${rwtm27} dakika`, style: 'font-size:13px;margin-top:-6px'});
             }
-            if (rwth18 !== 0 && rwtm18 !== 0) {
+            if (rwth18 !== 0 || rwtm18 !== 0) {
                 addChild({label: `18 saat için`, value: `${rwth18} saat, ${rwtm18} dakika`, style: 'font-size:13px;margin-top:-6px'});
             }
             
